@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="print.css" media="print" type="text/css">
+
+    <title>The Structure and Interpretation of Deep Networks</title>
+  </head>
+
+  <body>
+
+<header id="top" style="background: black;
+            background-size: cover;
+            background-repeat: repeat-x;
+            ">
+      <div class="inner">
+      <h1 style="font: bold 50pt Helvetica, Arial, sans-serif; color: white;
+        line-height: 0.8; letter-spacing: -3px; margin-bottom: 20px;">
+        Structure and <div>Interpretation of</div>
+        Deep Networks 
+      </h1>
+      <h2>A Deep Learning Practicum</h2>
+      <h2>IAP 2020</h2>
+		<div class='mymenu'>
+			<span class='menu-link-last'><a href='/#main-content'>Home</a></span>
+		</div>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>Structure and Interpretation of <nobr>Deep Networks</nobr></h2>
+          <p>Deep networks program themselves by finding patterns in data.
+          But what patterns do they find,
+          and what programs do they learn?
+          Large-scale machine learning presents computer science researchers
+          and practitioners with a new problem: how to understand, apply,
+          and improve complex programs that were not designed explicitly
+          by a human programmer.
+          </p>
+          <p>In this IAP practicum, we introduce the problem of
+          interpreting deep networks.  We will not focus on training.
+          Rather, we our topic is the art of how to understand a network
+          after it is trained.  We examine both local
+          (single-case) and global (over-a-distribution) methods for
+          understanding a network's behavior.
+
+          <h1>Syllabus</h1>
+          <h2>1. Why care how?</h2>
+          <p>Does it matter whether we understand what a
+          deep network is doing or not, if the results look good?
+          Isn't accuracy on the holdout set the ultimate goal?
+          <p>Reading:
+          <a href="https://arxiv.org/pdf/1702.08608.pdf">Doshi-Velez, Kim</a>;
+          <a href="https://arxiv.org/pdf/1606.03490.pdf">Lipton</a>
+          <p>Practicum:
+          Decoy MNIST.
+
+          <h2>2. Local explanations</h2>
+          <p>What part of the input does a model look at?  What can
+          we learn from this?
+          <p>Reading:
+          <a href="">Grad-CAM</a>
+          <a href="">RISE</a>
+          <a href="">LRP</a>
+          <a href="">SmoothGrad</a>
+          <a href="">Benchmark</a>
+          <p>Practicum:
+          TorchRay
+
+          <h2>3. Global explanations</h2>
+          <p>How does a neural network decompose the data?  What can
+          we learn from a model's representation?
+          <p>Reading:
+          <a href="">Network dissection</a>
+          <a href="">Lucid visualization</a>
+          (Adi et al., 2017b, Veldhoen et al., 2016, Conneau et al., 2018)
+          <p>Practicum: NeuroX, Net dissection
+          
+          <h2>4. Adversaries</h2>
+          <p>Recent findings suggest that adversarial robustness may
+          lead to more interpretable models.  We discuss and experiment with
+          this effect.
+          <a href="">Madry papers</a>
+          <p>Practicum: Generative model from a robust classifier
+          
+          <h2>5. Ethics</h2>
+          <p>Can undesirable biases in a model be detected?
+          <a href="">TCAV</a>
+          <p>Practicum: TBD
+
+          <h2>6. Causalilty and Interaction</h2>
+          <p>What can we learn about the structure of a model by posing
+          counterfactuals?
+          <a href="">GANPaint, Manipulating languge models</a>
+          <p>Practicum: GANPaint
+        </section>
+      </div>
+    </div>
+
+<footer>
+</footer>
+    
+  </body>
+</html>
+
