@@ -6,6 +6,13 @@
 }
 }
 
+#sponsorships {
+    background: white;
+}
+#sponsorships img {
+    height: 150px;
+}
+
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
