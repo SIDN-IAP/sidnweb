@@ -7,3 +7,6 @@ all: $(COPY_FILES)
 
 output/%: src/%
 	    cp -f $< $@
+
+output/slides/%: src/slides/%
+	    cp -f $< $@
